@@ -2,7 +2,7 @@ const container = document.getElementById( "container" );   // definiamo contain
 const titolo = document.querySelector( ".titolo" ).innerHTML = "FizzBuzzDOM"; // definiamo titolo
 
 for ( let i = 1; i <= 100; i++ ){   // variabile cicli
-    console.log(i);
+    console.log( i );
 
     if  (( i%3 == 0 ) && (i%5 == 0 )) { //divisibile per 3 e 5
     
@@ -18,7 +18,7 @@ for ( let i = 1; i <= 100; i++ ){   // variabile cicli
 
     } else { //altrimenti numero
 
-        container.innerHTML += `<div class="box"> + i + </div>`; //far comparire box Azzurro in container    
+        container.innerHTML += `<div class="box">` + i + `</div>`; //far comparire box Azzurro in container    
         
     }
 
