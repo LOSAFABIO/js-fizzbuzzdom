@@ -4,8 +4,6 @@ const titolo = document.querySelector( ".titolo" ).innerHTML = "FizzBuzzDOM"; //
 for ( let i = 1; i <= 100; i++ ){   // variabile cicli
     console.log(i);
 
-    i != 0;
-
     if  (( i%3 == 0 ) && (i%5 == 0 )) { //divisibile per 3
     
         container.innerHTML += `<div class="box red">` + "FizzBuzz" + `</div>`; //far comparire box in container    
@@ -16,11 +14,12 @@ for ( let i = 1; i <= 100; i++ ){   // variabile cicli
 
     } else if ( i%3 == 0 ) {
         
-            container.innerHTML += `<div class="box sea">` + "Fizz" + `</div>`; //far comparire box in container    
+        container.innerHTML += `<div class="box sea">` + "Fizz" + `</div>`; //far comparire box in container    
 
     } else {
 
         container.innerHTML += `<div class="box">` + i + `</div>`; //far comparire box in container    
-        }
+        
+    }
 
 }
